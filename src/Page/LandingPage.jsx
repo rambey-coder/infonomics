@@ -4,7 +4,7 @@ import Header from "../components/Header/Header";
 import Hero from "../components/HeroSection/Hero";
 import About from "../components/AboutSection/About";
 import Value from "../components/ValueSection/Value";
-import Partnership from "../components/Partnership/partnership";
+import Partnership from "../components/Partnership/Partnership";
 import Service from "../components/ServicesSection/Service";
 import Technology from "../components/TechSection/Technology";
 import Framework from "../components/TechFrameworkSection/Framework";
