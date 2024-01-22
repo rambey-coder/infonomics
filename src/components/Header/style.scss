@@ -1,0 +1,33 @@
+.header-container {
+  padding: 15px;
+  width: 95%;
+  max-width: 1400px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  a {
+    text-decoration: none;
+    img {
+      width: 200px;
+    }
+  }
+
+  .header-right {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+
+    a {
+      font-size: 14px;
+      color: #052639;
+      transition: all 0.3s ease-in-out;
+    }
+
+    a:hover {
+      color: #0179bf;
+    }
+  }
+}

@@ -1,0 +1,43 @@
+.value_container {
+  margin: 4rem 0;
+  background: #f1f5f6;
+  padding: 3rem 0;
+
+  .container {
+    margin-top: 0 !important;
+    margin-bottom: 0 !important;
+  }
+
+  .val_cont {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 5rem;
+
+    div:nth-child(1) {
+      width: 45%;
+      h2 {
+        font-size: 30px;
+        margin-bottom: 1rem;
+      }
+
+      div {
+        margin-bottom: 1.5rem;
+        h3 {
+          font-size: 25px;
+          margin-bottom: 1rem;
+        }
+        p {
+          line-height: 1.7;
+        }
+      }
+    }
+
+    .img-cont {
+      width: 45%;
+      img {
+        width: 100%;
+      }
+    }
+  }
+}

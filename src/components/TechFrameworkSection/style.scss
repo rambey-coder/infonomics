@@ -1,0 +1,35 @@
+.frame_work_cont {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+
+  .row-left {
+    width: 45%;
+    h2 {
+      margin-bottom: 1rem;
+    }
+  }
+
+  .row-right {
+    width: 45%;
+    display: flex;
+    align-items: stretch;
+    justify-content: space-between;
+    gap: 1rem;
+    flex-wrap: wrap;
+
+    div {
+      background: #fff;
+      border-radius: 4px;
+      padding: 15px;
+      outline: 1px solid #e5e5e5;
+      max-width: 300px;
+      width: 350px;
+
+      h5 {
+        font-size: 16px;
+        margin-bottom: 10px;
+      }
+    }
+  }
+}
