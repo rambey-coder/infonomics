@@ -11,6 +11,10 @@ import Framework from "../components/TechFrameworkSection/Framework";
 import Choose from "../components/ChooseSection/Choose";
 import Infonomics from "../components/Infonomics/Infonomics";
 import System from "../components/SystemsSection/System";
+import Accelerator from "../components/AcceleratorSection/Accelerator";
+import Stewardship from "../components/StewardSection/Stewardship";
+import Team from "../components/TeamSection/Team";
+import Operationization from "../components/OperationizationSection/Operationization";
 
 const LandingPage = () => {
   const location = useLocation();
@@ -32,6 +36,10 @@ const LandingPage = () => {
       <Choose />
       <Infonomics />
       <System />
+      <Accelerator />
+      <Stewardship />
+      <Team />
+      <Operationization />
     </div>
   );
 };

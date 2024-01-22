@@ -1,0 +1,34 @@
+.team_containeter {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 5rem;
+
+  div:nth-child(1) {
+    width: 55%;
+
+    img {
+      width: 100%;
+    }
+  }
+
+  div:nth-child(2) {
+    width: 45%;
+
+    h2 {
+      font-size: 35px;
+      margin-bottom: 2rem;
+    }
+
+    h3 {
+      font-size: 17px;
+    }
+
+    p {
+      color: #696969;
+      font-size: 14px;
+      font-weight: 500;
+      line-height: 1.7;
+    }
+  }
+}

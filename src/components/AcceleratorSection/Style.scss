@@ -1,0 +1,44 @@
+.acc_container {
+  .acc_header {
+    text-align: center;
+    max-width: 450px;
+    width: 100%;
+    margin: auto;
+    margin-bottom: 3rem;
+
+    h2 {
+      font-size: 30px;
+      margin-bottom: 1rem;
+    }
+  }
+
+  .acc_content {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    gap: 5rem;
+
+    .acc_right {
+      width: 45%;
+
+      h3 {
+        margin-bottom: 1.5rem;
+      }
+    }
+
+    .acc_left {
+      width: 45%;
+      h3 {
+        margin-bottom: 1.5rem;
+      }
+
+      ul {
+        margin-left: 2rem;
+
+        li {
+          margin-bottom: 0.7rem;
+        }
+      }
+    }
+  }
+}
