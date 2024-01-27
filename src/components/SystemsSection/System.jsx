@@ -2,7 +2,7 @@ import "./style.scss";
 
 const System = () => {
   return (
-    <div className="system_container">
+    <div className="system_container" id="services">
       <div className="container val_head">
         <h2>We offer a range of services to suit your needs</h2>
         <p>

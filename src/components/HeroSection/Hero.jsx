@@ -1,4 +1,3 @@
-import Button from "../Button/Button";
 import Marquee from "react-fast-marquee";
 import "./style.scss";
 
@@ -7,10 +6,6 @@ const Hero = () => {
     <div className="hero-section">
       <div className="hero-container">
         <div className="hero-left">
-          {/* <div className="top-cont">
-            <div></div>
-            <p>Infonomics Technology Services Limited</p>
-          </div> */}
           <div className="text-cont">
             <h2>Empowering with Digital Innovation and Real-time Decisions.</h2>
 
@@ -21,8 +16,12 @@ const Hero = () => {
             </p>
 
             <div className="btn-cont">
-              <Button />
-              <button>Contact Us</button>
+              <a to="#contact" className="learn-btn">
+                <span>
+                  <img src="/arrow.svg" />
+                </span>
+                Contact Us
+              </a>
             </div>
           </div>
         </div>

@@ -2,7 +2,7 @@ import "./style.scss";
 
 const About = () => {
   return (
-    <div className="container ">
+    <div className="container " id="about">
       <div className="abt_containeter">
         <div>
           <img src="/about-mg-s.png" />

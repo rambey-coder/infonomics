@@ -16,9 +16,9 @@
         // margin-left: 3rem;
 
         h2 {
-          color: #052639;
+          color: #c00000;
           font-weight: 500;
-          font-size: 40px;
+          font-size: 50px;
         }
 
         p {
@@ -35,13 +35,58 @@
           align-items: center;
           gap: 20px;
 
-          button:nth-child(2) {
-            background: transparent;
-            outline: 0;
-            border: 0;
-            color: #c00000;
-            font-weight: 500;
+          .learn-btn {
+            //   border: 2px solid #24b4fb;
+            background-color: #c00000;
+            border-radius: 30px;
+            padding: 0.8em 1.2em 0.8em 1em;
+            transition: all ease-in-out 0.2s;
+            font-size: 13px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: row-reverse;
+            gap: 5px;
+            color: #fff;
             cursor: pointer;
+            font-weight: 500;
+            text-decoration: none;
+
+            span {
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              background: #fff;
+              width: 25px;
+              height: 25px;
+              border-radius: 30px;
+              padding: 4px;
+
+              img {
+                width: 100%;
+              }
+            }
+
+            &:hover {
+              background-color: #e12e2e;
+            }
+
+            &:hover span {
+              animation: slide-in-left 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94)
+                both;
+            }
+
+            @keyframes slide-in-left {
+              0% {
+                transform: translateX(-8px);
+                opacity: 0;
+              }
+
+              100% {
+                transform: translateX(0px);
+                opacity: 1;
+              }
+            }
           }
         }
       }
@@ -92,7 +137,6 @@
           }
         }
       }
-      
     }
   }
 
