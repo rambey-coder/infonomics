@@ -8,6 +8,10 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 * {
   box-sizing: border-box;
   padding: 0;
@@ -17,6 +21,8 @@
 
 body {
   background: #fafafa;
+  padding: 0;
+  margin: 0;
 }
 
 .container {

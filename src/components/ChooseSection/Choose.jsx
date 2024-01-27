@@ -4,42 +4,48 @@ const Choose = () => {
   return (
     <div className="container choose_cont">
       <div className="img-cont ">
-        <img src="/ch-img.png" alt="choose" />
+        <ul>
+          <li>
+            Proven track record as the main Business Intelligence partner for
+            MTN Nigeria.
+          </li>
+
+          <li>
+            Continuous development and strengthening of relationships by
+            exceeding client expectations.
+          </li>
+
+          <li>
+            Emphasis on prompt, on-time, and high-quality service delivery.
+          </li>
+
+          <li>
+            Solution implementation experience and deep IT domain knowledge.
+          </li>
+
+          <li>
+            A program management approach that combines firmness and agility.
+          </li>
+
+          <li>
+            Consistent success in on-time implementation, getting it right from
+            the very first time for our customers.
+          </li>
+        </ul>
       </div>
 
       <div className="text-cont">
         <h3>Why Choose Us?</h3>
-        <ul>
-          <li>
-            <h6> Cultivating Excellence in IT Services</h6>
-            <p>
-              Infonomics Technology Services (Infonomics ) has been in the
-              business of providing IT Services to various customers over the
-              last 8 years in Nigeria with highly skilled and experienced
-              resources, delivering best practices solutions . Infonomics
-              started with MTN Nigeria as main Business Intelligence partner.
-              <br /> <br />
-              This relationship has been developed and strengthened by
-              continuously exceeding the expectations of our clients through
-              prompt on -time and high quality service deliver.
-            </p>
-          </li>
-
-          <li>
-            <h6>Effective Program Management Approach</h6>
-            <p>
-              Infonomics extensive solution implementation experience and IT
-              domain knowledge.
-            </p>
-          </li>
-          <li>
-            <h6>Expertise in Solution Implementation</h6>
-            <p>
-              A blend of firmness and agility ensures on-time implementation and
-              accuracy right from the very first time for our customers.
-            </p>
-          </li>
-        </ul>
+        <h4>Infonomics Technology Services Limited</h4>
+        <p>
+          For the past 8 years, Infonomics has been at the forefront of the IT
+          services landscape in Nigeria, demonstrating unwavering dedication to
+          delivering exceptional quality.
+          <br /> <br />
+          Our commitment is evident in our consistent efforts to leverage a team
+          of highly skilled and experienced professionals, enabling us to offer
+          cutting-edge IT solutions that adhere to best practices.
+        </p>
       </div>
     </div>
   );

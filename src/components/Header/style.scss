@@ -1,3 +1,14 @@
+.header_cont.active {
+  background-color: #ffe1e1;
+  backdrop-filter: blur(25px) saturate(180%);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  z-index: 999;
+}
+
 .header-container {
   padding: 15px;
   width: 95%;
@@ -21,7 +32,7 @@
     gap: 20px;
 
     a {
-      font-size: 14px;
+      font-size: 13px;
       color: #052639;
       transition: all 0.3s ease-in-out;
     }

@@ -1,3 +1,5 @@
+import Button from "../Button/Button";
+import Marquee from "react-fast-marquee";
 import "./style.scss";
 
 const Hero = () => {
@@ -5,22 +7,23 @@ const Hero = () => {
     <div className="hero-section">
       <div className="hero-container">
         <div className="hero-left">
-          <div className="top-cont">
+          {/* <div className="top-cont">
             <div></div>
             <p>Infonomics Technology Services Limited</p>
-          </div>
+          </div> */}
           <div className="text-cont">
-            <h2>
-              Transforming Opportunities With Digital Innovation & Realtime
-              Decision.
-            </h2>
+            <h2>Empowering with Digital Innovation and Real-time Decisions.</h2>
 
             <p>
-              We are a well-established solutions provider, specializing in
-              software and data-centric applications. Our core emphasis lies in
-              delivering actionable insights, consistently positioning our
-              clients ahead of the competition.
+              As a trusted solutions provider, we create software and
+              data-centric applications to keep our clients ahead in the
+              competition by offering actionable insights.
             </p>
+
+            <div className="btn-cont">
+              <Button />
+              <button>Contact Us</button>
+            </div>
           </div>
         </div>
         <div className="hero-right">
@@ -28,13 +31,14 @@ const Hero = () => {
         </div>
       </div>
 
-      <div className="hero-bottom">
+      <Marquee className="hero-bottom">
         <img src="/mtn.svg" />
         <img src="/eric.svg" />
         <img src="/ntel.svg" />
         <img src="/page.svg" />
         <img src="/emr.svg" />
-      </div>
+        <img src="/quick.svg" />
+      </Marquee>
     </div>
   );
 };

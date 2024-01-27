@@ -1,40 +1,60 @@
 import "./style.scss";
+
 const System = () => {
   return (
     <div className="system_container">
-      <div className="container val_cont">
-        <div>
-          <h2>Enterprise Systems</h2>
+      <div className="container val_head">
+        <h2>We offer a range of services to suit your needs</h2>
+        <p>
+          Elevating Possibilities: Unveiling the Essence of Infonomics
+          Technology Services Limited.
+        </p>
+
+        <div className=" val_cont">
           <div>
-            <h3>ERP and Enterprise Application Domain Knowledge</h3>
-
-            <ul>
-              <li>
-                Excellent understanding of supply chain processes and systems
-              </li>
-              <li>
-                Good understanding of Oracle Fusion Cloud, Oracle Transactional
-                Business Intelligence (OTBI).
-              </li>
-              <li>
-                Good understanding of Oracle Cloud Analytics (OCA) and Oracle
-                Data Integrator (ODI).
-              </li>
-              <li>
-                Good understanding of IFS Application Systems and IFS backend
-                development.
-              </li>
-              <li>
-                Good understanding of Sales and Distribution Digitization
-                Architecture and Systems.
-              </li>
-              <li>Proficiency in Mobile and Web Application Development.</li>
-            </ul>
+            <img src="/analytic.svg" />
+            <h5>Business intelligence (BI) and Analytic Services</h5>
+            <p>
+              Data Warehousing, VAS short code integration, Master Data
+              Management, Data Visualization and Reporting, Analytics, BI-
+              operation management and Machine and Deep Learning.{" "}
+            </p>
           </div>
-        </div>
 
-        <div className="img-cont">
-          <img src="/value-img.png" />
+          <div>
+            <img src="/settings.svg" />
+            <h5>Managed Service Operation and Resourcing</h5>
+            <p>
+              Managed Services, Smart Sourcing, Client Resource Augmentation,
+              Project Resourcing, Agile Project Management, and Upskilling and
+              knowledge transfer.
+            </p>
+          </div>
+          <div>
+            <img src="/dash.svg" />
+            <h5>Enterprise Applications</h5>
+            <p>
+              ERP Implementation and Support, CRM Implementation and Support,
+              Sales Enablement and Intelligence and Custom backend, web & mobile
+              application development.
+            </p>
+          </div>
+          <div>
+            <img src="/code.svg" />
+            <h5>Telco Services</h5>
+            <p>
+              VAS short code integration, Custom VAS application development,
+              and Telco product testing.
+            </p>
+          </div>
+          <div>
+            <img src="/cloud.svg" />
+            <h5>Cloud Deployment, Integration and Assurance Services</h5>
+            <p>
+              Software as a Service (SaaS), Infrastructure/Platform as a
+              Service, and Cloud software services development and support.
+            </p>
+          </div>
         </div>
       </div>
     </div>
