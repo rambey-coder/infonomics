@@ -1,4 +1,5 @@
 import { Swiper, SwiperSlide } from "swiper/react";
+import { useThemeContext } from "../../context/Context";
 import { Autoplay, Pagination, Navigation, FreeMode } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/pagination";
@@ -6,11 +7,30 @@ import "swiper/css/navigation";
 import "./Style.scss";
 
 const Project = () => {
+  const { theme } = useThemeContext();
+
+  const lightTheme = {
+    background: "linear-gradient(190deg, #21214F, #85374E)",
+  };
+
+  const darkTheme = {
+    background: "",
+  };
+
+  const heroStyles = (theme) => ({
+    background:
+      theme === "light" ? lightTheme.background : darkTheme.background,
+  });
   return (
-    <div className="project_cont">
+    <div className="project_cont" style={heroStyles(theme)}>
       <div className="container">
         <div className="expore_project">
-          <h2>Explore Our Projects</h2>
+          <h2
+            style={{
+              color: theme === "light" ? "#fff" : "",
+            }}>
+            Explore Our Projects
+          </h2>
           <p>
             Witness the Impact of Infonomics Technology Services. Check out our
             diverse portfolio
@@ -40,9 +60,9 @@ const Project = () => {
               spaceBetween: 30,
             },
             1071: {
-                slidesPerView: 3,
-                spaceBetween: 40,
-            }
+              slidesPerView: 3,
+              spaceBetween: 40,
+            },
           }}
           autoplay={{
             delay: 3500,

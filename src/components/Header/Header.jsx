@@ -1,11 +1,15 @@
 import { Link } from "react-router-dom";
 import "./style.scss";
 import { useEffect, useState } from "react";
+import { useThemeContext } from "../../context/Context";
+import Toggle from "./components/toggle";
 
 const Header = () => {
   const [isSticky, setSticky] = useState(false);
   const [toggle, setToggle] = useState(false);
   const [width, setWidth] = useState(window.innerWidth);
+
+  const { theme } = useThemeContext();
 
   useEffect(() => {
     window.addEventListener("resize", () => {
@@ -42,10 +46,32 @@ const Header = () => {
         )}
 
         <div className={`${toggle ? "header-right active" : "header-right"}`}>
-          <a href="/">Home</a>
-          <a href="#about">About Us</a>
-          <a href="#services">Services</a>
-          <a href="#contact">Contact</a>
+          <a
+            style={{
+              color: theme === "light" ? "#052639" : "#fff",
+            }}
+            href="/">
+            Home
+          </a>
+          <a
+            style={{
+              color: theme === "light" ? "#052639" : "#fff",
+            }}
+            href="#about">
+            About Us
+          </a>
+          <a
+            style={{ color: theme === "light" ? "#052639" : "#fff" }}
+            href="#services">
+            Services
+          </a>
+          <a
+            style={{ color: theme === "light" ? "#052639" : "#fff" }}
+            href="#contact">
+            Contact
+          </a>
+
+          <Toggle />
         </div>
       </div>
     </div>

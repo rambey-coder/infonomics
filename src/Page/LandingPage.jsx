@@ -7,23 +7,64 @@ import Choose from "../components/ChooseSection/Choose";
 import System from "../components/SystemsSection/System";
 import Project from "../components/Project/Project";
 import Contact from "../components/ContactUsSection/Contact";
+import { useThemeContext } from "../context/Context";
+import "./Style.scss";
 
 const LandingPage = () => {
   const location = useLocation();
+  const { theme } = useThemeContext();
 
   useEffect(() => {
     window.scrollTo(0, 0);
   }, [location]);
 
   return (
-    <div>
+    <div
+      className="general_content_container"
+      style={{ background: theme === "light" ? "#fff" : "#181a42" }}>
+      <img
+        src="/bgJar.svg"
+        alt="background"
+        className="background_square square1"
+      />
+
+      <img
+        src="/bgJar.svg"
+        alt="background"
+        className="background_square square2"
+      />
+
+      <img
+        src="/bgJar.svg"
+        alt="background"
+        className="background_square square3"
+      />
+
+      <img
+        src="/bgJar.svg"
+        alt="background"
+        className="background_square square4"
+      />
+      <img
+        src="/bgJar.svg"
+        alt="background"
+        className="background_square square5"
+      />
+      <img
+        src="/bgJar.svg"
+        alt="background"
+        className="background_square square6"
+      />
+
       <Header />
-      <Hero />
-      <About />
-      <System />
-      <Project />
-      <Choose />
-      <Contact />
+      <div className="general_container">
+        <Hero />
+        <About />
+        <System />
+        <Project />
+        <Choose />
+        <Contact />
+      </div>
     </div>
   );
 };

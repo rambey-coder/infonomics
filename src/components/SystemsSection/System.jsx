@@ -1,8 +1,24 @@
+import { useThemeContext } from "../../context/Context";
 import "./style.scss";
 
 const System = () => {
+  const { theme } = useThemeContext();
+
+  const lightTheme = {
+    background: "linear-gradient(320deg, #21214F, #85374E)",
+  };
+
+  const darkTheme = {
+    background: "",
+  };
+
+  const heroStyles = (theme) => ({
+    background:
+      theme === "light" ? lightTheme.background : darkTheme.background,
+  });
+
   return (
-    <div className="system_container" id="services">
+    <div className="system_container" id="services" style={heroStyles(theme)}>
       <div className="container val_head">
         <h2>We offer a range of services to suit your needs</h2>
         <p>

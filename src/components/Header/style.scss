@@ -7,6 +7,10 @@
   right: 0;
   width: 100%;
   z-index: 999;
+
+  a {
+    color: #052639 !important;
+  }
 }
 
 .header_cont {
@@ -43,7 +47,7 @@
       right: 0;
       padding: 20px;
       flex-direction: column;
-      transition: all .5s ease;
+      transition: all 0.5s ease;
 
       a {
         color: #fff !important;
@@ -53,7 +57,6 @@
     .header-right.active {
       top: 5rem;
     }
-    
   }
 
   .header-right {
@@ -64,7 +67,7 @@
 
     a {
       font-size: 13px;
-      color: #052639;
+      color: #fff;
       transition: all 0.3s ease-in-out;
     }
 

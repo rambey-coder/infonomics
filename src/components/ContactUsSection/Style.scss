@@ -39,6 +39,28 @@
       input {
         width: 100%;
       }
+
+      button {
+        background-color: #c00000;
+        border-radius: 30px;
+        padding: 0.9em 1.2em;
+        transition: all ease-in-out 0.2s;
+        font-size: 13px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row-reverse;
+        gap: 5px;
+        color: #fff;
+        cursor: pointer;
+        font-weight: 500;
+        text-decoration: none;
+        width: 150px;
+
+        &:hover {
+          background-color: #e12e2e;
+        }
+      }
     }
   }
 }

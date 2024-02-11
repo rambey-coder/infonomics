@@ -3,7 +3,8 @@
   align-items: center;
   justify-content: space-between;
   gap: 5rem;
-  margin: 2rem 0;
+  padding: 2rem;
+  border-radius: 20px;
 
   @media (max-width: 950px) {
     flex-direction: column-reverse;
