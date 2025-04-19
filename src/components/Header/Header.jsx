@@ -71,6 +71,12 @@ const Header = () => {
             Contact
           </a>
 
+          <Link
+            style={{ color: theme === "light" ? "#052639" : "#fff" }}
+            to="/portfolio">
+            Portfolio
+          </Link>
+
           <Toggle />
         </div>
       </div>

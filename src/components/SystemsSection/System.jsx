@@ -17,16 +17,20 @@ const System = () => {
       theme === "light" ? lightTheme.background : darkTheme.background,
   });
 
+  // https://docs.google.com/presentation/d/1gtwRpIGOK1YlkTdGSMf1_ymloa13RJ2r/edit?usp=sharing&ouid=111340413373821216017&rtpof=true&sd=true
+
   return (
     <div className="system_container" id="services" style={heroStyles(theme)}>
       <div className="container val_head">
-        <h2>We offer a range of services to suit your needs</h2>
+        <h2 className="!text-3xl">
+          We offer a range of services to suit your needs
+        </h2>
         <p>
           Elevating Possibilities: Unveiling the Essence of Infonomics
           Technology Services Limited.
         </p>
 
-        <div className=" val_cont">
+        <div className="!grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3  val_cont">
           <div>
             <img src="/analytic.svg" />
             <h5>Business intelligence (BI) and Analytic Services</h5>
